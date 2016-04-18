@@ -7,10 +7,18 @@ import {Component, OnInit} from 'angular2/core';
 })
 export class NavigationComponent implements OnInit{
 
-    boxClass:string;
-
     ngOnInit():void {
-        this.boxClass = 'mid-size';
+        //noinspection TypeScriptUnresolvedFunction
+        $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            hover: true,
+            belowOrigin: true,
+            alignment: 'right'
+        });
+
+        //noinspection TypeScriptUnresolvedFunction
+        $(".button-collapse").sideNav();
     }
 
 }

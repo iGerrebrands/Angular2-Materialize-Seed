@@ -35,7 +35,7 @@ gulp.task('build-css', function () {
 });
 
 gulp.task('build-angular-css', function () {
-    return gulp.src('dev/**/*.scss')
+    return gulp.src(appDev + '**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(postcss([precss, autoprefixer, cssnano]))
         .pipe(sourcemaps.write())
@@ -67,8 +67,9 @@ gulp.task('build-html', function () {
 
 gulp.task('watch', function () {
     gulp.watch(appDev + '**/*.ts', ['build-ts']);
-    gulp.watch(assetsDev + 'scss/**/*.scss', ['build-css', 'build-angular-css']);
+    gulp.watch([assetsDev + 'scss/**/*.scss', appDev + '**/*.scss'], ['build-css', 'build-angular-css']);
     gulp.watch(assetsDev + 'img/*', ['build-img']);
+    gulp.watch(appDev + '**/*.html', ['build-html']);
 });
 
 gulp.task('default', ['watch', 'build-ts', 'build-html', 'build-css', 'build-angular-css']);
