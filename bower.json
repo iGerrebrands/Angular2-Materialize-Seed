@@ -1,0 +1,25 @@
+{
+  "name": "angular2-boilerplate",
+  "description": "angular 2 app",
+  "main": "index.html",
+  "authors": [
+    "Ian Gerrebrands"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular2"
+  ],
+  "homepage": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "Materialize": "materialize#^0.97.6"
+  }
+}

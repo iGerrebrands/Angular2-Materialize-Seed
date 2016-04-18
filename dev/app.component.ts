@@ -1,12 +1,12 @@
 import {Component} from 'angular2/core';
+import {ContainerComponent} from './container/container.component'
 
 @Component({
     selector: 'my-app',
-    template: `
-        <h1>Angular 2 Boilerplate</h1>
-        <p>Hello World!</p>
-    `,
+    templateUrl: './dev/app.view.html',
+    directives: [ContainerComponent]
 })
 export class AppComponent {
+
 
 }

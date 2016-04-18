@@ -18,3 +18,8 @@ npm install
 ```
 npm start
 ```
+
+## Libs
+*UnderscoreJS
+*Jquery
+*Materialize

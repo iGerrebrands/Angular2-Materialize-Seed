@@ -1,0 +1,8 @@
+.box{
+    display: inline-block;
+    border: 1px solid lightgray;
+}
+
+.mid-size{
+    border: 1px solid black;
+}
