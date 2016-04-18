@@ -24,7 +24,19 @@
     <link rel="stylesheet" href="src/css/app.css"/>
 </head>
 <body>
-<my-app>Loading...</my-app>
+<my-app>
+    <div class="preloader-wrapper big active mainLoader">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+    </div>
+</my-app>
 
 <script>
     System.config({
