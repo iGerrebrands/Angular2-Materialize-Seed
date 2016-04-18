@@ -1,10 +1,10 @@
 import {Component} from 'angular2/core';
-import {ContainerComponent} from './container/container.component'
+import {NavigationComponent} from './navigation/navigation.component'
 
 @Component({
     selector: 'my-app',
     templateUrl: './dev/app.view.html',
-    directives: [ContainerComponent]
+    directives: [NavigationComponent]
 })
 export class AppComponent {
 
