@@ -13,7 +13,8 @@ export class UserListComponent {
     users: UserListItem[] = [
         new UserListItem('Ian', 23, true),
         new UserListItem('Jeff', 19),
-        new UserListItem('Teng', 23)
+        new UserListItem('Teng', 23),
+        new UserListItem('Klaas', 29)
     ];
 
 
