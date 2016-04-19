@@ -1,0 +1,14 @@
+<ul class="collection">
+    <li class="collection-item avatar blue-grey lighten-5"
+        *ngFor="#user of users"
+        (mouseenter)="toggleHover(user)"
+        (mouseleave)="toggleHover(user)"
+        [ngClass]="{'deep-purple lighten-3': user.hover}">
+        <img src="../../../assets/images/yuna.jpg" alt="" class="circle">
+        <span class="title deep-purple-text darken-4">{{user.name}}</span>
+        <p>{{user.age}} <br>
+            <span class="red-text darken-4" *ngIf="user.admin">admin</span>
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+</ul>
